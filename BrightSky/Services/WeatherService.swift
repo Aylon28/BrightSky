@@ -12,7 +12,7 @@ class WeatherService {
     struct RequestInfo {
         static let apiBase = "https://api.weatherapi.com/v1"
         static let current = apiBase + "/current.json"
-        static let apiKey = "b016240d1e364f7eb02123642230210"
+        static let apiKey = ""
         
         static var parameters = ["key": "b016240d1e364f7eb02123642230210",
                                  "q": "Oslo"]
