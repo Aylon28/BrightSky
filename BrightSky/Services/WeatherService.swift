@@ -14,7 +14,7 @@ class WeatherService {
         static let current = apiBase + "/current.json"
         static let apiKey = ""
         
-        static var parameters = ["key": "b016240d1e364f7eb02123642230210",
+        static var parameters = ["key": "",
                                  "q": "Oslo"]
     }
     
