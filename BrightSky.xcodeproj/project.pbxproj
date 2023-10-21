@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEBF90F990D9EEF1D94FDBCC /* Pods_BrightSky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D65679AC9371E0D6C8A707 /* Pods_BrightSky.framework */; };
+		F802C1372AC3DAA900FE1D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1362AC3DAA900FE1D90 /* AppDelegate.swift */; };
+		F802C1392AC3DAA900FE1D90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1382AC3DAA900FE1D90 /* SceneDelegate.swift */; };
+		F802C13B2AC3DAA900FE1D90 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C13A2AC3DAA900FE1D90 /* WelcomeViewController.swift */; };
+		F802C13E2AC3DAA900FE1D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F802C13C2AC3DAA900FE1D90 /* Main.storyboard */; };
+		F802C1402AC3DAAA00FE1D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F802C13F2AC3DAAA00FE1D90 /* Assets.xcassets */; };
+		F802C1432AC3DAAA00FE1D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F802C1412AC3DAAA00FE1D90 /* LaunchScreen.storyboard */; };
+		F802C1502AC4140700FE1D90 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C14F2AC4140700FE1D90 /* WeatherService.swift */; };
+		F802C1532AC415B400FE1D90 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1522AC415B400FE1D90 /* WelcomePresenter.swift */; };
+		F802C1552AC4167200FE1D90 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1542AC4167200FE1D90 /* WelcomeRouter.swift */; };
+		F802C1572AC4170700FE1D90 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1562AC4170700FE1D90 /* WelcomeInteractor.swift */; };
+		F802C1592AC4175B00FE1D90 /* WelcomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802C1582AC4175B00FE1D90 /* WelcomeModuleBuilder.swift */; };
+		F83840F52ACAE5F0002D8249 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83840F42ACAE5F0002D8249 /* LocationService.swift */; };
+		F83840F82AD3C7C8002D8249 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83840F72AD3C7C8002D8249 /* CurrentWeather.swift */; };
+		F83840FA2AD3CD85002D8249 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83840F92AD3CD85002D8249 /* WeatherViewController.swift */; };
+		F83840FD2AD3D011002D8249 /* NavigationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83840FC2AD3D011002D8249 /* NavigationBuilder.swift */; };
+		F84AF8822AD3D9A1001436CF /* WeatherModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AF8812AD3D9A1001436CF /* WeatherModuleBuilder.swift */; };
+		F84AF8842AD3DA0A001436CF /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AF8832AD3DA0A001436CF /* WeatherRouter.swift */; };
+		F84AF8862AD3DA16001436CF /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AF8852AD3DA16001436CF /* WeatherPresenter.swift */; };
+		F84AF8882AD3DA23001436CF /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84AF8872AD3DA23001436CF /* WeatherInteractor.swift */; };
+		F8F3E9FE2ADD6711002691EC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8F3E9FD2ADD6711002691EC /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75B323ABB32DDDF3F08ED032 /* Pods-BrightSky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSky.debug.xcconfig"; path = "Target Support Files/Pods-BrightSky/Pods-BrightSky.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D65679AC9371E0D6C8A707 /* Pods_BrightSky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightSky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F802C1332AC3DAA900FE1D90 /* BrightSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F802C1362AC3DAA900FE1D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F802C1382AC3DAA900FE1D90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F802C13A2AC3DAA900FE1D90 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F802C13D2AC3DAA900FE1D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F802C13F2AC3DAAA00FE1D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F802C1422AC3DAAA00FE1D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F802C1442AC3DAAA00FE1D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F802C14F2AC4140700FE1D90 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		F802C1522AC415B400FE1D90 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		F802C1542AC4167200FE1D90 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		F802C1562AC4170700FE1D90 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		F802C1582AC4175B00FE1D90 /* WelcomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleBuilder.swift; sourceTree = "<group>"; };
+		F83840F42ACAE5F0002D8249 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F83840F72AD3C7C8002D8249 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		F83840F92AD3CD85002D8249 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		F83840FC2AD3D011002D8249 /* NavigationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBuilder.swift; sourceTree = "<group>"; };
+		F84AF8812AD3D9A1001436CF /* WeatherModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModuleBuilder.swift; sourceTree = "<group>"; };
+		F84AF8832AD3DA0A001436CF /* WeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		F84AF8852AD3DA16001436CF /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		F84AF8872AD3DA23001436CF /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		FE8548024DAE823D7A5F2A92 /* Pods-BrightSky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSky.release.xcconfig"; path = "Target Support Files/Pods-BrightSky/Pods-BrightSky.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F802C1302AC3DAA900FE1D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBF90F990D9EEF1D94FDBCC /* Pods_BrightSky.framework in Frameworks */,
+				F8F3E9FE2ADD6711002691EC /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44897CFF9AE791D1B6503107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75B323ABB32DDDF3F08ED032 /* Pods-BrightSky.debug.xcconfig */,
+				FE8548024DAE823D7A5F2A92 /* Pods-BrightSky.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		784B3145F321B66BAFC29A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7D65679AC9371E0D6C8A707 /* Pods_BrightSky.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F802C12A2AC3DAA900FE1D90 = {
+			isa = PBXGroup;
+			children = (
+				F802C1352AC3DAA900FE1D90 /* BrightSky */,
+				F802C1342AC3DAA900FE1D90 /* Products */,
+				44897CFF9AE791D1B6503107 /* Pods */,
+				784B3145F321B66BAFC29A06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F802C1342AC3DAA900FE1D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F802C1332AC3DAA900FE1D90 /* BrightSky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F802C1352AC3DAA900FE1D90 /* BrightSky */ = {
+			isa = PBXGroup;
+			children = (
+				F83840FB2AD3CFEE002D8249 /* Navigation */,
+				F802C1512AC414BD00FE1D90 /* Welcome */,
+				F802C14B2AC412BC00FE1D90 /* Weather */,
+				F802C14C2AC412CC00FE1D90 /* Settings */,
+				F802C14E2AC413F300FE1D90 /* Services */,
+				F802C14A2AC412A100FE1D90 /* System */,
+				F83840F62AD3C7A7002D8249 /* Entities */,
+				F802C14D2AC4137A00FE1D90 /* Resources */,
+			);
+			path = BrightSky;
+			sourceTree = "<group>";
+		};
+		F802C14A2AC412A100FE1D90 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F802C1362AC3DAA900FE1D90 /* AppDelegate.swift */,
+				F802C1382AC3DAA900FE1D90 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F802C14B2AC412BC00FE1D90 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F83840F92AD3CD85002D8249 /* WeatherViewController.swift */,
+				F84AF8852AD3DA16001436CF /* WeatherPresenter.swift */,
+				F84AF8832AD3DA0A001436CF /* WeatherRouter.swift */,
+				F84AF8872AD3DA23001436CF /* WeatherInteractor.swift */,
+				F84AF8812AD3D9A1001436CF /* WeatherModuleBuilder.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		F802C14C2AC412CC00FE1D90 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F802C14D2AC4137A00FE1D90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F802C13C2AC3DAA900FE1D90 /* Main.storyboard */,
+				F802C13F2AC3DAAA00FE1D90 /* Assets.xcassets */,
+				F802C1412AC3DAAA00FE1D90 /* LaunchScreen.storyboard */,
+				F802C1442AC3DAAA00FE1D90 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F802C14E2AC413F300FE1D90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F802C14F2AC4140700FE1D90 /* WeatherService.swift */,
+				F83840F42ACAE5F0002D8249 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F802C1512AC414BD00FE1D90 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F802C13A2AC3DAA900FE1D90 /* WelcomeViewController.swift */,
+				F802C1522AC415B400FE1D90 /* WelcomePresenter.swift */,
+				F802C1542AC4167200FE1D90 /* WelcomeRouter.swift */,
+				F802C1562AC4170700FE1D90 /* WelcomeInteractor.swift */,
+				F802C1582AC4175B00FE1D90 /* WelcomeModuleBuilder.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F83840F62AD3C7A7002D8249 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F83840F72AD3C7C8002D8249 /* CurrentWeather.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F83840FB2AD3CFEE002D8249 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F83840FC2AD3D011002D8249 /* NavigationBuilder.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F802C1322AC3DAA900FE1D90 /* BrightSky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F802C1472AC3DAAA00FE1D90 /* Build configuration list for PBXNativeTarget "BrightSky" */;
+			buildPhases = (
+				EA949B2FDA2190DA913631BE /* [CP] Check Pods Manifest.lock */,
+				F802C12F2AC3DAA900FE1D90 /* Sources */,
+				F802C1302AC3DAA900FE1D90 /* Frameworks */,
+				F802C1312AC3DAA900FE1D90 /* Resources */,
+				8D99A72718AA918E6CBD75BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrightSky;
+			packageProductDependencies = (
+				F8F3E9FD2ADD6711002691EC /* Alamofire */,
+			);
+			productName = BrightSky;
+			productReference = F802C1332AC3DAA900FE1D90 /* BrightSky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F802C12B2AC3DAA900FE1D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F802C1322AC3DAA900FE1D90 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F802C12E2AC3DAA900FE1D90 /* Build configuration list for PBXProject "BrightSky" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F802C12A2AC3DAA900FE1D90;
+			packageReferences = (
+				F8F3E9FC2ADD6711002691EC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F802C1342AC3DAA900FE1D90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F802C1322AC3DAA900FE1D90 /* BrightSky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F802C1312AC3DAA900FE1D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F802C1432AC3DAAA00FE1D90 /* LaunchScreen.storyboard in Resources */,
+				F802C1402AC3DAAA00FE1D90 /* Assets.xcassets in Resources */,
+				F802C13E2AC3DAA900FE1D90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D99A72718AA918E6CBD75BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrightSky/Pods-BrightSky-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrightSky/Pods-BrightSky-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrightSky/Pods-BrightSky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA949B2FDA2190DA913631BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrightSky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F802C12F2AC3DAA900FE1D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F802C1502AC4140700FE1D90 /* WeatherService.swift in Sources */,
+				F802C1532AC415B400FE1D90 /* WelcomePresenter.swift in Sources */,
+				F84AF8822AD3D9A1001436CF /* WeatherModuleBuilder.swift in Sources */,
+				F802C1572AC4170700FE1D90 /* WelcomeInteractor.swift in Sources */,
+				F802C13B2AC3DAA900FE1D90 /* WelcomeViewController.swift in Sources */,
+				F802C1552AC4167200FE1D90 /* WelcomeRouter.swift in Sources */,
+				F83840FD2AD3D011002D8249 /* NavigationBuilder.swift in Sources */,
+				F802C1372AC3DAA900FE1D90 /* AppDelegate.swift in Sources */,
+				F83840F82AD3C7C8002D8249 /* CurrentWeather.swift in Sources */,
+				F83840FA2AD3CD85002D8249 /* WeatherViewController.swift in Sources */,
+				F84AF8862AD3DA16001436CF /* WeatherPresenter.swift in Sources */,
+				F802C1592AC4175B00FE1D90 /* WelcomeModuleBuilder.swift in Sources */,
+				F84AF8842AD3DA0A001436CF /* WeatherRouter.swift in Sources */,
+				F84AF8882AD3DA23001436CF /* WeatherInteractor.swift in Sources */,
+				F83840F52ACAE5F0002D8249 /* LocationService.swift in Sources */,
+				F802C1392AC3DAA900FE1D90 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F802C13C2AC3DAA900FE1D90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F802C13D2AC3DAA900FE1D90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F802C1412AC3DAAA00FE1D90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F802C1422AC3DAAA00FE1D90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F802C1452AC3DAAA00FE1D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F802C1462AC3DAAA00FE1D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F802C1482AC3DAAA00FE1D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B323ABB32DDDF3F08ED032 /* Pods-BrightSky.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6K6J4T6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrightSky/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayl.BrightSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F802C1492AC3DAAA00FE1D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8548024DAE823D7A5F2A92 /* Pods-BrightSky.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6K6J4T6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrightSky/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ayl.BrightSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F802C12E2AC3DAA900FE1D90 /* Build configuration list for PBXProject "BrightSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F802C1452AC3DAAA00FE1D90 /* Debug */,
+				F802C1462AC3DAAA00FE1D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F802C1472AC3DAAA00FE1D90 /* Build configuration list for PBXNativeTarget "BrightSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F802C1482AC3DAAA00FE1D90 /* Debug */,
+				F802C1492AC3DAAA00FE1D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8F3E9FC2ADD6711002691EC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8F3E9FD2ADD6711002691EC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8F3E9FC2ADD6711002691EC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F802C12B2AC3DAA900FE1D90 /* Project object */;
+}
